@@ -34,16 +34,15 @@ const printLength = () => {
   lengthElement.textContent = `LENGTH: ${barraElement.value}`;
 };
 
-/*Cadena de caracteres disponibles para la contraseña*/
+/*Generar una letra aleatoria"*/
 const characters =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567890!@#$%^&*()_+-={}[]:;<>,.?/";
 
-/*Seleccionar un carácter aleatorio de "characters"*/
 const randomCharacter = () => {
   return characters[Math.floor(Math.random() * characters.length)];
 };
 
-/*Generar una nueva contraseña con la longitud de la barra*/
+/*Generar la contraseña con la longitud de la barra*/
 const newPass = () => {
   let password = "";
   const passLength = barraElement.value;
